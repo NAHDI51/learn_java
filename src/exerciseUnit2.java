@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class exerciseUnit2 {
     public static void main(String[] args) {
         // x = 10, y = 5 z = 3
@@ -37,7 +39,51 @@ public class exerciseUnit2 {
         // 3
         // WRONG
 
-        boolean answer = (3+4 == 5) != (3+4 >= 5);
-        System.out.println(answer);
+//        boolean answer = (3+4 == 5) != (3+4 >= 5);
+//        System.out.println(answer);
+//
+//
+         /*
+         1 => length > 5 and indexOf(A) < 0
+         2 => length > 5 and indexOf(B) < 0
+         3 => length <= 5 and indexOf(A) < 0
+
+         1 => indexOf(A) < 0 and length > 5
+         3 => indexOf(A) < 0 and length <= 5
+         2 => indexOf(B) < 0 and length > 5
+
+
+          */
+
+        char c = 'a';
+
+        /*
+        a, b, c, ..., z
+         */
+        /*
+        a,b,c,..,z
+         */
+//        int num = 2030;
+//        if('a' <= c && c <= 'z') {
+//
+//        }
+//        if(1000 <= num && num < 10000) {
+//
+//        }
+        /*
+        x
+        boolean z = (y > 50000)
+        !z = (y <= 50000)
+
+        a = !x && z
+         */
+
+        boolean result = false;
+        String str1 = "", str2 = "abs";
+
+        if(str1.equals(null) && str2.equals(null)) {
+            result = str1 == str2;
+        }
+        System.out.println(result);
     }
 }

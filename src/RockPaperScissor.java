@@ -63,7 +63,7 @@ public class RockPaperScissor {
         return answer;
     }
 
-    /*
+    /*2
     @brief: takeUserInput takes input from a user
     it uses a while loop to ensure that the user is taking the
     correct input, and a scanner to scan the input.

@@ -103,5 +103,17 @@ public class pattern {
          * * * * *
          * * * * * *
          */
+
+        int sum = 0;
+        // 1 2 3 4 5
+        // Continue => skip the turn
+        //
+        for(int i = 1; i <= 5; i++) {
+            // 2, 4 skips
+            if(i % 2 == 0) continue;
+            System.out.println(i);
+            sum += i;
+        }
+        System.out.println(sum);
     }
 }
