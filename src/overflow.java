@@ -13,6 +13,7 @@ public class overflow {
 
             2^31-1 + 1 = 01111111 11111111 11111111 11111111
             10000000 00000000 00000000 00000000
+            => -2147483648
          */
         // Overflow
         System.out.println(Integer.MAX_VALUE + 1);

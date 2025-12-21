@@ -54,6 +54,13 @@ public class runtimeAnalysis {
             }
         }
 
+        /*
+        int a = 5
+        int b = 2
+        a = b
+
+        mathematically: a = b : (a == b)
+         */
         int i = 5;
         // 5 7 9 11 13 15 17 => 7 times
         while(true) {
@@ -65,9 +72,9 @@ public class runtimeAnalysis {
 
              */
             // equivalent condition
-            if(i == 17) {
-                break;
-            }
+//            if(i == 17) {
+//                break;
+//            }
             if(((i-1)/2) == 8) {
                 break;
             }
