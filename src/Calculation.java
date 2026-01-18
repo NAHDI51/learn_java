@@ -92,6 +92,18 @@ public class Calculation {
         System.out.println(u1.exp());
         System.out.println(u1.abs());
 
+        int x = 5;
+        int y = 5;
+
+        // operator
+        // + - * /
+        x = y; // expression/assignment
+        x == y; // condition
+
+        if(x == y) {
+
+        }
+
     }
 }
 

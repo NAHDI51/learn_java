@@ -47,4 +47,30 @@ public class substring {
         }
         return false;
     }
+
+    public static void main(String[] args) {
+        /*          012345678910 */
+        String s = "abcdefghij";
+
+        for(int i = 0; i < s.length() - 3; i++) {
+            /*
+                s.substring(start_index, end_index);
+                i i+3
+                0 3
+                1 4
+                2 5
+                3 6
+                4 7
+                5 8
+                6 9
+             */
+            System.out.println(s.substring(i, i+3));
+        }
+        String a = "abc";
+        String b = "abc";
+
+        if(a.equals(b)) {
+            System.out.println("A equals B.");
+        }
+    }
 }

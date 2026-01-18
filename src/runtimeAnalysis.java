@@ -45,10 +45,10 @@ public class runtimeAnalysis {
 
         }
 
-        // 16 14 12 10 8 6 4 2 => 8 times
+        // 16 14 12 10 8 6 4 2
         for(int i = 16; i >= 2; i -= 2) {
 
-            // 16 10 4 => 3 times
+            // 4 10 16 => 3 times
             if(i%3 == 1) {
                 System.out.println(i + " ");
             }
