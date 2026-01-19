@@ -13,6 +13,14 @@ public class runtimeAnalysis {
 
         }
 
+        // 0,1,2,3,4 total: 5 ta iterations
+        for(int i = 0; i < 5; i++) {
+            // j = 0,1,2,3: 4 ta iterations
+            for(int j = 0; j < 4; j++) {
+//                5*4 = 20
+            }
+        }
+
         //  i < R; => i <= (R-1)
         for(int i = L; i < R; i++) { => for(int i = L; i <= R-1; i++)
 
