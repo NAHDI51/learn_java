@@ -1,10 +1,10 @@
 
 public class Painter {
 
-    int xLocation;
-    int yLocation;
-    String direction;
-    int remainingPaint;
+    private int xLocation;
+    private int yLocation;
+    private String direction;
+    private int remainingPaint;
 
     public Painter() {
         this.xLocation = 0;
@@ -22,6 +22,21 @@ public class Painter {
         this.direction = direction;
         this.remainingPaint = remainingPaint;
     }
+
+    /*
+        Accessor: accesses the X coordinate
+     */
+    public int getX() {
+        return xLocation;
+    }
+    public int getY() {
+        return yLocation;
+    }
+    public String getDirection() {
+        return direction;
+    }
+
+
     // declare
     public void move() {
         /*

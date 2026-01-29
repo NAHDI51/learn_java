@@ -11,6 +11,9 @@ public class RockPaperScissor {
     final String Paper = "Paper";
     final String Scissor = "Scissor";
 
+    /*
+        get: accessors
+     */
     public int getFirstPlayerWinCount() {
         return firstPlayerWinCount;
     }
@@ -27,6 +30,9 @@ public class RockPaperScissor {
     @brief: Sets the value of SecondPlayer
     value = true => the second player is a computer
     value = false => the second player is a person
+     */
+    /*
+        All mutators: set
      */
     public void setSecondPlayerComputer(boolean value) {
         isSecondPlayerComputer = value;

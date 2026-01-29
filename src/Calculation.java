@@ -2,7 +2,45 @@ import java.util.Scanner;
 
 public class Calculation {
 
-    int a,b;
+    // attributes => internal variables
+
+    /*
+        PRIVATE REASON: SECURITY
+
+        Direct access is PROHIBITED.
+     */
+    private int a,b;
+
+    // Specific method for accessing => accesor
+    /*
+        Starts with get keyword => accessor
+     */
+    public int getA() {
+        return a;
+    }
+    public int getB() {
+        return b;
+    }
+
+    /*
+        Mutator: sets the value of a
+     */
+    public void setA(int a) {
+        this.a = a;
+        return;
+    }
+    public void setB(int b) {
+        this.b = b;
+        return;
+    }
+    /*
+        As parameters, you can use any other object
+        types too
+     */
+    public void totalAdd(Calculation a) {
+
+    }
+
 
     /*
     jei method ta instantitate er time e call kora hoy
@@ -20,6 +58,11 @@ public class Calculation {
     public Calculation(int a, int b) {
         this.a = a;
         this.b = b;
+        /*
+        You can also do this
+         */
+        this.add();
+        this.mult();
     }
     /*
         You can add as many methods of the same name
@@ -27,6 +70,10 @@ public class Calculation {
         patterns.
 
         OVERLOADING: DIFFERENT METHODS WITH SAME NAME
+     */
+
+    /*
+        PRIVATE METHODS: ACCESSIBLE FROM THE CLASS ITSELF ONLY
      */
     public Calculation() {
         a = 3;
@@ -49,7 +96,7 @@ public class Calculation {
         return a + b;
     }
 
-    public  int abs() {
+    public int abs() {
         if (a >= 0) {
             return a;
         } else if (a < 0) {
@@ -98,12 +145,12 @@ public class Calculation {
 
         // operator
         // + - * /
-        x = y; // expression/assignment
-        x == y; // condition
+//        x = y; // expression/assignment
+//        x == y; // condition
 
-        if(x == y) {
-
-        }
+//        if(x == y) {
+//
+//        }
 
     }
 }
