@@ -1,9 +1,10 @@
 public class block {
     public void fun() {
         int r = 5;
+//        int j = 10; // -> scope -> full method
         for(int i = 0; i < 10; i++) { // Block er moddhe i declare
             int j = 5;
-            if(i%2 == 1) {
+            if (i % 2 == 1) {
                 // block inside block
                 int p = 10;
                 System.out.println(j);
