@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class arrayInitial {
     public static void main(String[] args) {
         // fIrst method => using the word new
@@ -66,5 +68,19 @@ public class arrayInitial {
         System.out.println("The value is: " + value);
 
 
+    }
+    public void arrayScan() {
+        System.out.print("Enter the size of the array: ");
+        int n;
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();
+
+        // Array declare
+        int[] a = new int[n];
+        // n element {x,x,x,x,x,x}
+        for(int i = 0; i < a.length; i++) {
+            System.out.print("Enter Element no " + i + ": ");
+            a[i] = sc.nextInt();
+        }
     }
 }
