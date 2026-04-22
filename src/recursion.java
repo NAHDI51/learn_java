@@ -56,4 +56,12 @@ public class recursion {
             System.out.print(arr[i]+" ");
         }
     }
+    public static boolean isSorted(int[] a, int index) {
+        if (index == 0) return true;
+        else if (isSorted(a, index - 1) && a[index - 1] < a[index]) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
