@@ -29,10 +29,13 @@ public class sorting_techniques {
 
     public static void selection_sort(int[] arr) {
         // For each position i
-        for(int i = 0; i < arr.length; i++) {
+        // assume arr.length = n
+        // runtime n*n = n^2
+        // (Worst case) time complexity: O(N^2)
+        for(int i = 0; i < arr.length; i++) {  // n times
             // Find the minimum index between i to a.length-1
             int minIndex=i;
-            for(int j = i; j < arr.length; j++){
+            for(int j = i; j < arr.length; j++){  // nearly n times
                 if(arr[j] < arr[minIndex]){
                     minIndex=j;
                 }
@@ -43,6 +46,39 @@ public class sorting_techniques {
             arr[minIndex] = c;
         }
     }
+
+    public static void insertion_sort(int[] arr) {
+        // For each element i
+        // (we start from the second element, because an array
+        // with only one element is always sorted)
+
+        // (Worst case) time complexity: O(N^2)
+        // n times loop
+        for(int i = 1; i < arr.length; i++) {
+            int key = arr[i];
+            int j = i-1;
+            // For each element greater than arr[i];
+            // almost n times
+            // best case: while loop will run 0 times
+            while(j >= 0 && arr[j] > key) {
+                // Shift 1 block
+                arr[j+1] = arr[j];
+                j--;
+            }
+            // [j+1] no ghor khali hoise
+            // Insert that element into the vacant position
+            arr[j+1] = key;
+
+//            for(int x : arr) {
+//                System.out.print(x + " ");
+//            }
+            for(int k = 0; k < arr.length; k++) {
+                System.out.print(arr[k] + " ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of the array: ");
@@ -58,7 +94,8 @@ public class sorting_techniques {
         }
         System.out.println(" ");
 
-        selection_sort(arr);
+//        selection_sort(arr);
+        insertion_sort(arr);
         System.out.print("The array after sorting: ");
         for(int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");
