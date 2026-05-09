@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class sorting_techniques {
-    public static void arrMinimum(Scanner sc, int[]a){
+    public static void arrMinimum(Scanner sc, int[]a) {
         int min = a[0];
         int minIndex=0; // i ... a.length-1
         for(int i=0;i<a.length;i++){
