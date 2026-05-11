@@ -9,7 +9,7 @@
  */
 public class practiceMethod {
     // Constructor: jodi class name = method name
-    public static boolean practicemethod() {
+    PracticeMethod() {
 
     }
     public void asdfbasd() {
