@@ -36,7 +36,7 @@ public class sorting_techniques {
             // Find the minimum index between i to a.length-1
             int minIndex=i;
             for(int j = i; j < arr.length; j++){  // nearly n times
-                if(arr[j] < arr[minIndex]){
+                if(arr[j] < arr[minIndex]){ // < > ==
                     minIndex=j;
                 }
             }

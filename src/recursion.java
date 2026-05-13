@@ -27,9 +27,9 @@ public class recursion {
     public static void isSorted(Scanner sc) {
         System.out.print("Enter size: ");
         int n = sc.nextInt();
-        int[] arr = new int[n];
+        String[] arr = new String[n];
         for(int i=0;i<n;i++){
-            arr[i]=sc.nextInt();
+            arr[i]=sc.next();
         }
         boolean flag = true; // INitially, everything is okay
         /*
@@ -43,7 +43,7 @@ public class recursion {
             korte hoy
          */
         for(int i=0;i<arr.length;i++){
-            if(arr[i-1]>arr[i]){
+            if(arr[i].compareTo(arr[i-1]) < 0){
                 flag = false;
             }
         }
